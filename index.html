@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40KB Image Compressor</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="app-header">
+            <h1>40KB Image Compressor</h1>
+            <p>Compress your photos instantly for government exams, job portals, or applications.</p>
+        </header>
+
+        <!-- Upload Box -->
+        <div class="upload-card" id="drop-zone">
+            <input type="file" id="file-input" accept="image/*" hidden>
+            <div class="upload-content" id="upload-trigger">
+                <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                <p><strong>Click to upload</strong> or drag and drop</p>
+                <span>Supports JPG, PNG, WEBP</span>
+            </div>
+        </div>
+
+        <!-- Result Section (Hidden initially) -->
+        <main class="result-section hidden" id="result-section">
+            <div class="preview-grid">
+                <!-- Original Card -->
+                <div class="preview-card">
+                    <h3>Original Image</h3>
+                    <div class="img-box">
+                        <img id="original-img" src="" alt="Original">
+                    </div>
+                    <span id="original-size" class="size-badge">0 KB</span>
+                </div>
+
+                <!-- Compressed Card -->
+                <div class="preview-card">
+                    <h3>Compressed (Target &lt; 40KB)</h3>
+                    <div class="img-box">
+                        <img id="compressed-img" src="" alt="Compressed">
+                    </div>
+                    <span id="compressed-size" class="size-badge success">0 KB</span>
+                </div>
+            </div>
+
+            <div class="action-row">
+                <button id="download-btn" class="btn primary-btn">Download Compressed Image</button>
+                <button id="reset-btn" class="btn secondary-btn">Compress Another</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
