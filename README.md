@@ -2,7 +2,7 @@
 
 A lightweight, client-side web application designed to automatically compress and resize photos until they fit under the **40KB** threshold. Perfect for job application forms, government exam portals, and passport uploads.
 
-<a href="https://your-username.github.io/40kb-image-compressor" target="_blank" rel="noopener noreferrer">✨ View Live Demo</a>
+<a href="https://patilamar184.github.io/image-compressor/" target="_blank" rel="noopener noreferrer">✨ View Live Demo</a>
 
 ## 🚀 Features
 
